@@ -76,7 +76,7 @@ def salvar_arquivo(url, nome_do_arquivo):
 <br>
 <br>
 
-# Loop que para entrada de dados
+# Loop para entrada de dados
 ```
 while True:
     # Usuário digita a URL que deseja criar um QR code
