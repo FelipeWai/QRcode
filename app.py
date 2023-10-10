@@ -10,6 +10,9 @@ def url_valida(url):
         return False
 
 def salvar_arquivo(url, nome_do_arquivo):
+    pasta = Path("QRcodes")
+    if not pasta.exists():  
+        pasta.mkdir()
     code = qrcode.make(url)
     if isinstance(nome_do_arquivo, str):
         file_path = Path(f"QRcodes/{nome_do_arquivo}.jpeg")  # Use barras normais aqui
